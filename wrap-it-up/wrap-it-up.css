@@ -1,0 +1,95 @@
+/* Wrap It Up pages: the app's own look inside the studio header and footer.
+   Loaded after /style.css; everything is scoped to body.wiu. */
+.wiu {
+  --accent: var(--wiu-amber);
+  --accent-2: var(--wiu-red);
+  --accent-ink: #1b1b1f;
+}
+
+/* Hero */
+.wiu .hero { padding: 56px 0 48px; }
+.wiu .hero::before {
+  background:
+    radial-gradient(ellipse at 75% 35%, rgba(255, 179, 0, 0.18), transparent 55%),
+    radial-gradient(ellipse at 15% 90%, rgba(229, 57, 53, 0.16), transparent 50%);
+}
+.wiu .hero .wrap { grid-template-columns: 1.05fr 1fr; gap: 40px; }
+.wiu .hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+.wiu .hero-phones { display: flex; justify-content: center; gap: 14px; }
+.wiu .hero-phones .phone:nth-child(1) { transform: rotate(-5deg) translateY(18px); }
+.wiu .hero-phones .phone:nth-child(3) { transform: rotate(5deg) translateY(18px); }
+.wiu .display { font-family: "Bangers", var(--font); font-weight: 400; letter-spacing: 0.04em; }
+.wiu .badge {
+  display: inline-block; font-size: 0.8rem; font-weight: 700; color: var(--muted);
+  border: 1px solid var(--border-strong); border-radius: 999px; padding: 3px 12px; margin-bottom: 14px;
+}
+.wiu .meta { color: var(--muted); font-size: 0.9rem; }
+
+/* Buttons: the app's red button with an amber rim */
+.wiu .btn { border-radius: 999px; padding: 13px 22px; font-weight: 800; letter-spacing: 0.02em; border-width: 2px; }
+.wiu .btn-primary { background: var(--accent-2); color: #fff; border-color: var(--accent); box-shadow: 0 6px 20px rgba(229, 57, 53, 0.35); }
+
+/* Phones */
+.wiu .phone.lg { width: 220px; }
+
+/* Gallery */
+.wiu .gallery { display: flex; gap: 18px; overflow-x: auto; padding: 8px 4px 22px; scroll-snap-type: x mandatory; }
+.wiu .gallery figure { margin: 0; scroll-snap-align: start; flex: 0 0 auto; }
+.wiu .gallery figcaption { color: var(--muted); font-size: 0.85rem; text-align: center; margin-top: 10px; }
+
+/* Feature and help cards: simple padded boxes, not the studio's media cards */
+.wiu .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.wiu .card { display: block; padding: 22px; border-radius: var(--radius); overflow: visible; }
+.wiu .card p { color: var(--muted); margin: 0; }
+.wiu .card .icon { font-size: 1.6rem; line-height: 1; margin-bottom: 12px; display: block; }
+
+/* Skins showcase */
+.wiu .skins { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.wiu .skin { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.wiu .skin .pair { display: flex; gap: 12px; justify-content: center; }
+.wiu .skin .pair .phone { width: 130px; padding: 5px; border-radius: 20px; }
+.wiu .skin .pair .phone img { border-radius: 15px; }
+.wiu .skin h3 { margin: 0; }
+.wiu .skin p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.wiu .tag { display: inline-block; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 9px; border-radius: 999px; background: rgba(255, 179, 0, 0.14); color: var(--accent); margin-left: 6px; vertical-align: 2px; }
+
+/* Pricing */
+.wiu .prices { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.wiu .price { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.wiu .price .amount { font-size: 1.9rem; font-weight: 800; color: var(--accent); }
+.wiu .price.featured { border-color: var(--accent); }
+
+/* CTA band */
+.wiu .cta-band {
+  text-align: center; border-radius: 22px; padding: 40px 24px;
+  background: linear-gradient(135deg, rgba(229, 57, 53, 0.22), rgba(255, 179, 0, 0.18));
+  border: 1px solid rgba(255, 179, 0, 0.35);
+}
+.wiu .cta-band .lead { margin-inline: auto; }
+.wiu .cta-band .btn-row { justify-content: center; }
+
+/* Numbered steps (beta page) */
+.wiu ol.steps { list-style: none; padding: 0; counter-reset: step; display: grid; gap: 14px; }
+.wiu ol.steps li {
+  counter-increment: step; position: relative;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 18px 18px 64px;
+}
+.wiu ol.steps li::before {
+  content: counter(step); position: absolute; left: 18px; top: 16px;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent); color: var(--accent-ink); font-weight: 800;
+  display: grid; place-items: center;
+}
+.wiu .note { background: rgba(255, 179, 0, 0.08); border: 1px solid rgba(255, 179, 0, 0.3); border-radius: var(--radius); padding: 16px 18px; }
+
+@media (max-width: 900px) {
+  .wiu .hero .wrap { grid-template-columns: 1fr; }
+}
+@media (max-width: 820px) {
+  .wiu .hero-phones .phone { width: 31%; max-width: 170px; }
+  .wiu .hero-phones { gap: 8px; }
+}
+@media (max-width: 420px) {
+  .wiu .skin .pair .phone { width: 46%; }
+}

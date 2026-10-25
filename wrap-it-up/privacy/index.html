@@ -10,21 +10,36 @@
   <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/wrap-it-up/wrap-it-up.css">
+  <script src="/site.js" defer></script>
 </head>
-<body>
+<body class="wiu">
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="/">KNA Digital Studio</a>
-      <nav>
+      <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+      <nav class="main" aria-label="Main">
         <a href="/">Home</a>
-        <a href="/wrap-it-up/">Wrap It Up</a>
+        <a href="/work/" aria-current="page">Work</a>
+        <a href="/templates/">Templates</a>
+        <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
-        <a class="nav-cta" href="/wrap-it-up/beta/">Join the beta</a>
       </nav>
     </div>
   </header>
+  <div class="subnav">
+    <div class="wrap">
+      <span class="crumb"><a href="/work/">Work</a> / <b>Wrap It Up</b></span>
+      <nav aria-label="Wrap It Up">
+        <a href="/wrap-it-up/">Overview</a>
+        <a href="/wrap-it-up/beta/">Join the beta</a>
+        <a href="/wrap-it-up/privacy/" aria-current="page">Privacy policy</a>
+      </nav>
+    </div>
+  </div>
 
-  <main class="wrap narrow" style="padding-top:48px">
+  <main id="main" class="wrap narrow" style="padding-top:48px">
     <h1>Privacy Policy for Wrap It Up</h1>
     <p class="meta">Effective date: October 16, 2026</p>
 
@@ -61,8 +76,26 @@
 
   <footer class="site">
     <div class="wrap">
-      &copy; 2026 KNA Digital Studio ·
-      <a href="mailto:knadigitalstudio@gmail.com">knadigitalstudio@gmail.com</a>
+      <div>
+        <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+        <p style="margin-top:14px">Hand-built apps and website templates.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/work/">Work</a></li><li><a href="/templates/">Templates</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul><li><a href="/wrap-it-up/">Wrap It Up</a></li><li><a href="/templates/harbor/">Harbor</a></li></ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul><li><a href="/privacy/">Privacy</a></li><li><a href="/license/">License</a></li><li><a href="/refunds/">Refunds</a></li><li><a href="/terms/">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>&copy; 2026 KNA Digital Studio · knadigitalstudio@gmail.com</span>
+      <span id="page-weight">0 frameworks · hand-written</span>
     </div>
   </footer>
 </body>

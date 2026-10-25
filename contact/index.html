@@ -4,37 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact · KNA Digital Studio</title>
-  <meta name="description" content="Contact KNA Digital Studio for app support and questions.">
+  <meta name="description" content="Contact KNA Digital Studio for app support, template support and anything else.">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
+  <script src="/site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="/">KNA Digital Studio</a>
-      <nav>
+      <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+      <nav class="main" aria-label="Main">
         <a href="/">Home</a>
-        <a href="/wrap-it-up/">Wrap It Up</a>
+        <a href="/work/">Work</a>
+        <a href="/templates/">Templates</a>
+        <a href="/about/">About</a>
         <a href="/contact/" aria-current="page">Contact</a>
-        <a class="nav-cta" href="/wrap-it-up/beta/">Join the beta</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap narrow" style="padding-top:48px">
-    <h1>Contact</h1>
-    <p class="lead">For app support, bug reports, feedback, or anything else, email:</p>
-    <p><a href="mailto:knadigitalstudio@gmail.com"><strong>knadigitalstudio@gmail.com</strong></a></p>
-    <p>Please include the app name and your phone model if you’re reporting a problem. We usually reply within a few days.</p>
+  <main id="main">
+    <div class="wrap page-head">
+      <p class="eyebrow">Contact</p>
+      <h1>Get in touch</h1>
+      <p class="lead">One inbox for everything. We usually reply within a few days.</p>
+      <p style="margin-top:22px"><a class="btn btn-primary" href="mailto:knadigitalstudio@gmail.com">knadigitalstudio@gmail.com</a></p>
+    </div>
+
+    <section style="padding-top:8px">
+      <div class="wrap">
+        <div class="grid-3">
+          <div class="principle">
+            <span class="num">APPS</span>
+            <h3>App support</h3>
+            <p>Bug reports and questions about Wrap It Up. Include your phone model and what happened. Beta tester? See <a href="/wrap-it-up/beta/">the beta page</a> first.</p>
+          </div>
+          <div class="principle">
+            <span class="num">TEMPLATES</span>
+            <h3>Template support</h3>
+            <p>Bought a template? Send your order number and the template name. Support covers setup questions and bugs.</p>
+          </div>
+          <div class="principle">
+            <span class="num">EVERYTHING ELSE</span>
+            <h3>Ideas and questions</h3>
+            <p>Template requests, partnerships, or just saying hi. All of it lands in the same inbox.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site">
     <div class="wrap">
-      &copy; 2026 KNA Digital Studio ·
-      <a href="mailto:knadigitalstudio@gmail.com">knadigitalstudio@gmail.com</a>
+      <div>
+        <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+        <p style="margin-top:14px">Hand-built apps and website templates.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/work/">Work</a></li><li><a href="/templates/">Templates</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul><li><a href="/wrap-it-up/">Wrap It Up</a></li><li><a href="/templates/harbor/">Harbor</a></li></ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul><li><a href="/privacy/">Privacy</a></li><li><a href="/license/">License</a></li><li><a href="/refunds/">Refunds</a></li><li><a href="/terms/">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>&copy; 2026 KNA Digital Studio · knadigitalstudio@gmail.com</span>
+      <span id="page-weight">0 frameworks · hand-written</span>
     </div>
   </footer>
 </body>

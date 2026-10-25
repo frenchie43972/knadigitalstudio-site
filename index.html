@@ -3,61 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KNA Digital Studio</title>
-  <meta name="description" content="KNA Digital Studio makes small, fun apps. Now testing: Wrap It Up, the one-tap way to tell someone to wrap it up.">
-  <meta property="og:title" content="Wrap It Up — by KNA Digital Studio">
-  <meta property="og:description" content="Someone talking too long? Press the button. Join the Android beta.">
-  <meta property="og:image" content="https://knadigitalstudio.com/assets/screens/classic_flash.webp">
+  <title>KNA Digital Studio · Hand-built apps and website templates</title>
+  <meta name="description" content="KNA Digital Studio is an independent studio making small apps and hand-coded, lightweight website templates. No bloat, no tracking.">
+  <meta property="og:title" content="KNA Digital Studio">
+  <meta property="og:description" content="Hand-built apps and website templates. No bloat, no tracking.">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
+  <script src="/site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="/">KNA Digital Studio</a>
-      <nav>
+      <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+      <nav class="main" aria-label="Main">
         <a href="/" aria-current="page">Home</a>
-        <a href="/wrap-it-up/">Wrap It Up</a>
+        <a href="/work/">Work</a>
+        <a href="/templates/">Templates</a>
+        <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
-        <a class="nav-cta" href="/wrap-it-up/beta/">Join the beta</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="wrap">
         <div>
-          <span class="badge">Android · Beta testers wanted</span>
-          <h1><span class="display">WRAP IT UP!</span><br>One tap. Message received.</h1>
-          <p class="lead">Someone talking way too long? Hold up your phone, press the big button, and a giant pulsing phrase says it for you.</p>
+          <p class="eyebrow">Independent studio</p>
+          <h1>Small studio.<br><span class="soft">Hand-built software.</span></h1>
+          <p class="lead">KNA Digital Studio makes apps people enjoy and website templates that load fast. Written by hand, with no bloat, no ads and no tracking.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="/wrap-it-up/beta/">Join the beta</a>
-            <a class="btn btn-ghost" href="/wrap-it-up/">See the app</a>
+            <a class="btn btn-primary" href="/templates/">Browse templates</a>
+            <a class="btn btn-ghost" href="/work/">See all work</a>
           </div>
         </div>
-        <div class="hero-phones" aria-hidden="true">
-          <div class="phone"><img src="/assets/screens/classic_button.webp" alt="" width="585" height="1266"></div>
+
+        <div class="collage" aria-hidden="true">
+          <div class="browser">
+            <div class="bar"><i></i><i></i><i></i><span class="url">knadigitalstudio.com/templates/harbor/demo/</span></div>
+            <div class="harbor">
+              <div class="h-nav"><span class="h-logo">Harbor Plumbing</span><span class="h-links"><span>Services</span><span>Areas</span><span>Reviews</span></span><span class="h-cta">Book now</span></div>
+              <div class="h-hero">
+                <div><h4>Fast, friendly plumbing. Same-day.</h4><p>Licensed local pros, upfront prices, and a 1-year guarantee on every job.</p><span class="h-btn">Get a free quote</span></div>
+                <div class="h-art"></div>
+              </div>
+              <div class="h-cards">
+                <div class="h-card"><i></i><b>Leak repair</b><span>From $89</span></div>
+                <div class="h-card"><i></i><b>Water heaters</b><span>Install &amp; service</span></div>
+                <div class="h-card"><i></i><b>Drains</b><span>24/7 emergency</span></div>
+              </div>
+            </div>
+          </div>
           <div class="phone"><img src="/assets/screens/classic_flash.webp" alt="" width="585" height="1266"></div>
-          <div class="phone"><img src="/assets/screens/halloween_button.webp" alt="" width="585" height="1266"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Work</p>
+            <h2>What the studio makes</h2>
+          </div>
+          <a href="/work/">All work →</a>
+        </div>
+        <div class="grid">
+          <a class="card wiu-card" href="/wrap-it-up/">
+            <div class="thumb wiu">
+              <span class="wordmark">WRAP IT UP!</span>
+              <div class="phone"><img src="/assets/screens/classic_button.webp" alt="" width="585" height="1266" loading="lazy"></div>
+              <div class="phone"><img src="/assets/screens/halloween_button.webp" alt="" width="585" height="1266" loading="lazy"></div>
+            </div>
+            <div class="body">
+              <h3>Wrap It Up</h3>
+              <p>The one-tap novelty app for meetings, dinners, and that friend who never stops. Six skins, 41 phrases, zero ads.</p>
+              <div class="meta"><span class="chip beta"><span class="dot"></span>Android beta</span><span class="chip">App</span></div>
+            </div>
+          </a>
+
+          <a class="card harbor-card" href="/templates/harbor/">
+            <div class="thumb harbor-thumb">
+              <div class="browser">
+                <div class="bar"><i></i><i></i><i></i></div>
+                <div class="harbor">
+                  <div class="h-nav"><span class="h-logo">Harbor</span><span class="h-cta">Book now</span></div>
+                  <div class="h-hero"><div><h4>Fast, friendly plumbing.</h4><span class="h-btn">Free quote</span></div><div class="h-art"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3>Harbor</h3>
+              <p>A website template for local service businesses: plumbers, cleaners, landscapers. Booking-ready, local-SEO-ready.</p>
+              <div class="meta"><span class="chip soon"><span class="dot"></span>Coming soon</span><span class="chip">Template</span><span class="price">$49</span></div>
+            </div>
+          </a>
+
+          <a class="card dashed" href="#signup">
+            <div class="thumb workshop"><span>In the workshop</span></div>
+            <div class="body">
+              <h3>Next project</h3>
+              <p>Something new is on the bench. Join the list to hear first when it ships.</p>
+              <div class="meta"><span class="chip soon"><span class="dot"></span>In the workshop</span></div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <p class="eyebrow">From the studio</p>
-        <h2>Small apps that make people laugh</h2>
-        <p class="lead">KNA Digital Studio is an independent developer making simple, fun apps. No ads, no tracking, just the good part.</p>
-        <div class="grid" style="margin-top:24px">
-          <a class="card" href="/wrap-it-up/">
-            <span class="badge">Android · In beta</span>
-            <h3>Wrap It Up</h3>
-            <p>The one-tap novelty app for meetings, dinners, and that friend who never stops. Six skins, 41 phrases, zero ads.</p>
-          </a>
+        <p class="eyebrow">How we build</p>
+        <h2>Three rules for everything we ship</h2>
+        <div class="grid-3" style="margin-top:28px">
+          <div class="principle">
+            <span class="num">01</span>
+            <h3>Written by hand</h3>
+            <p>Plain HTML, CSS and JavaScript. No page builders, no frameworks, nothing you can't read and change yourself.</p>
+          </div>
+          <div class="principle">
+            <span class="num">02</span>
+            <h3>Featherweight</h3>
+            <p>Every product shows its real size and speed scores. The footer of this page shows what you just downloaded.</p>
+          </div>
+          <div class="principle">
+            <span class="num">03</span>
+            <h3>Private by default</h3>
+            <p>No ads, no tracking, no data sold. Not in our apps, not in our templates, not on this site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight" id="signup">
+      <div class="wrap">
+        <div class="signup">
+          <div>
+            <h2>Hear about new releases</h2>
+            <p>New templates, app launches and the occasional behind-the-scenes note. One email when something ships.</p>
+          </div>
+          <div class="signup-action">
+            <a class="btn btn-primary" href="mailto:knadigitalstudio@gmail.com?subject=Notify%20me%20about%20new%20releases">Notify me by email</a>
+            <small>Opens your email app with a ready-made message. One email per release, and you can leave the list anytime.</small>
+          </div>
         </div>
       </div>
     </section>
@@ -65,9 +158,26 @@
 
   <footer class="site">
     <div class="wrap">
-      &copy; 2026 KNA Digital Studio ·
-      <a href="/wrap-it-up/privacy/">Privacy</a> ·
-      <a href="mailto:knadigitalstudio@gmail.com">knadigitalstudio@gmail.com</a>
+      <div>
+        <a class="brand" href="/"><span class="mark" aria-hidden="true">KNA</span>KNA Digital Studio</a>
+        <p style="margin-top:14px">Hand-built apps and website templates.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/work/">Work</a></li><li><a href="/templates/">Templates</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul><li><a href="/wrap-it-up/">Wrap It Up</a></li><li><a href="/templates/harbor/">Harbor</a></li></ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul><li><a href="/privacy/">Privacy</a></li><li><a href="/license/">License</a></li><li><a href="/refunds/">Refunds</a></li><li><a href="/terms/">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>&copy; 2026 KNA Digital Studio · knadigitalstudio@gmail.com</span>
+      <span id="page-weight">0 frameworks · hand-written</span>
     </div>
   </footer>
 </body>
