@@ -1,4 +1,4 @@
-// KNA Digital Studio: small enhancements. Every page works without this file.
+// K&A Digital Studio: small enhancements. Every page works without this file.
 
 // Page weight in the footer, measured by the browser (not a hard-coded number).
 function showPageWeight() {
