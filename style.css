@@ -84,7 +84,7 @@ nav.main a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--studio); }
 /* --- Project sub-nav (inside a project, e.g. Wrap It Up) ----------------- */
 .subnav { border-bottom: 1px solid var(--border); background: var(--bg-2); }
 .subnav .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px; padding-top: 10px; padding-bottom: 10px; }
-.subnav .crumb { font: 600 0.8rem/1 var(--mono); color: var(--faint); margin-right: 6px; }
+.subnav .crumb { font: 600 0.85rem/1 var(--font); color: var(--faint); margin-right: 6px; }
 .subnav .crumb a { color: var(--muted); text-decoration: none; }
 .subnav .crumb a:hover { color: var(--text); }
 .subnav .crumb b { color: var(--text); font-weight: 700; }
@@ -97,14 +97,14 @@ nav.main a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--studio); }
 .subnav nav a[aria-current="page"] { color: var(--accent-ink); background: var(--accent); }
 
 /* --- Type --------------------------------------------------------------- */
-h1, h2, h3 { letter-spacing: -0.02em; text-wrap: balance; }
-h1 { font-size: clamp(2.3rem, 5.6vw, 4rem); line-height: 1.04; margin: 0 0 18px; font-weight: 850; }
+h1, h2, h3 { letter-spacing: -0.022em; text-wrap: balance; }
+h1 { font-size: clamp(2.3rem, 5.4vw, 3.9rem); line-height: 1.05; margin: 0 0 20px; font-weight: 800; }
 h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); line-height: 1.12; margin: 0 0 12px; font-weight: 800; }
 h3 { font-size: 1.12rem; line-height: 1.3; margin: 0 0 6px; }
 p, ul, ol { margin: 0 0 16px; }
 .lead { color: var(--muted); font-size: clamp(1.05rem, 1.6vw, 1.22rem); max-width: 60ch; text-wrap: pretty; }
 .eyebrow {
-  font: 700 0.76rem/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase;
+  font: 700 0.78rem/1 var(--font); letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--accent); margin: 0 0 14px;
 }
 .muted { color: var(--muted); }
@@ -133,7 +133,7 @@ section.alt { background: var(--bg-2); border-block: 1px solid var(--border); }
 
 .chip {
   display: inline-flex; align-items: center; gap: 7px;
-  font: 600 0.74rem/1 var(--mono); letter-spacing: 0.04em; text-transform: uppercase;
+  font: 700 0.72rem/1 var(--font); letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--muted); border: 1px solid var(--border-strong); border-radius: 999px; padding: 6px 10px;
 }
 .chip .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
@@ -150,7 +150,8 @@ section.alt { background: var(--bg-2); border-block: 1px solid var(--border); }
     radial-gradient(600px 380px at 0% 100%, rgba(20, 184, 166, 0.09), transparent 60%);
 }
 .hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
-.hero h1 .soft { color: var(--muted); }
+.hero h1 { max-width: 13ch; }
+.hero h1 .soft { color: var(--studio); }
 
 /* Hero collage: a browser window (templates) and a phone (apps). */
 .collage { position: relative; min-height: 420px; }
@@ -255,15 +256,21 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
   display: grid; place-items: center;
   background: repeating-linear-gradient(135deg, var(--surface-2) 0 14px, var(--surface) 14px 28px);
 }
-.thumb.workshop span { font: 600 0.8rem/1 var(--mono); color: var(--faint); letter-spacing: 0.1em; text-transform: uppercase; border: 1px dashed var(--border-strong); padding: 10px 14px; border-radius: 10px; }
+.thumb.workshop span { font: 700 0.76rem/1 var(--font); color: var(--faint); letter-spacing: 0.1em; text-transform: uppercase; border: 1px dashed var(--border-strong); padding: 10px 14px; border-radius: 10px; }
 .card.wiu-card { --accent: var(--wiu-amber); }
 .card.harbor-card { --accent: var(--harbor); }
 .card.dashed { border-style: dashed; background: transparent; }
 
 /* Principles */
 .principle { padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
-.principle .num { font: 700 0.78rem/1 var(--mono); color: var(--accent); letter-spacing: 0.1em; }
+.principle .num { font: 700 0.76rem/1 var(--font); color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; }
 .principle h3 { margin-top: 14px; }
+.principle .icon {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent);
+}
+.principle .icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.approach .principle { background: transparent; }
 .principle p { color: var(--muted); margin: 0; }
 
 /* Filter chips (Work, Templates) */
@@ -297,14 +304,14 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 /* --- Product page ------------------------------------------------------- */
 .product { --accent: var(--harbor); --accent-ink: #04201d; }
 .product-head { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; padding: 56px 0 28px; }
-.crumbs { font: 500 0.82rem/1 var(--mono); color: var(--faint); margin-bottom: 18px; }
+.crumbs { font: 500 0.88rem/1 var(--font); color: var(--faint); margin-bottom: 18px; }
 .crumbs a { color: var(--muted); text-decoration: none; }
 .buy {
   position: sticky; top: 88px;
   background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); padding: 22px;
 }
 .buy fieldset { border: 0; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
-.buy legend { font: 700 0.76rem/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.buy legend { font: 700 0.76rem/1 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
 .license {
   display: grid; grid-template-columns: auto 1fr auto; gap: 4px 12px; align-items: center; cursor: pointer;
   border: 1px solid var(--border-strong); border-radius: 12px; padding: 12px 14px;
@@ -323,7 +330,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
   display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
   padding: 14px 16px; border-bottom: 1px solid var(--border); background: var(--surface-2);
 }
-.preview .controls label, .preview .controls .ctl { font: 600 0.78rem/1 var(--mono); color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.preview .controls label, .preview .controls .ctl { font: 600 0.85rem/1 var(--font); color: var(--muted); display: flex; align-items: center; gap: 8px; }
 .preview .controls input[type="text"] {
   font: 500 0.9rem/1 var(--font); color: var(--text); background: var(--bg);
   border: 1px solid var(--border-strong); border-radius: 8px; padding: 8px 10px; width: 170px;
@@ -365,13 +372,17 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 .checks { list-style: none; padding: 0; display: grid; gap: 10px; }
 .checks li { padding-left: 28px; position: relative; }
+/* A drawn check mark, so the list never reads as empty checkboxes */
 .checks li::before {
-  content: ""; position: absolute; left: 0; top: 0.42em; width: 16px; height: 16px; border-radius: 5px;
-  background: color-mix(in srgb, var(--accent) 22%, transparent);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 60%, transparent);
+  content: ""; position: absolute; left: 0; top: 0.36em; width: 18px; height: 18px; border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.checks li::after {
+  content: ""; position: absolute; left: 6px; top: calc(0.36em + 4px); width: 5px; height: 9px;
+  border: solid var(--accent); border-width: 0 2px 2px 0; transform: rotate(45deg);
 }
 .pages { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
-.pages li { font: 600 0.82rem/1 var(--mono); border: 1px solid var(--border-strong); border-radius: 8px; padding: 8px 11px; color: var(--muted); }
+.pages li { font: 600 0.88rem/1 var(--font); border: 1px solid var(--border-strong); border-radius: 8px; padding: 8px 11px; color: var(--muted); }
 
 details { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 details + details { margin-top: 10px; }
@@ -392,13 +403,13 @@ details > div { padding: 0 18px 16px; color: var(--muted); }
 /* --- Footer ------------------------------------------------------------- */
 footer.site { border-top: 1px solid var(--border); margin-top: 40px; color: var(--muted); font-size: 0.92rem; }
 footer.site .wrap { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; padding-top: 44px; padding-bottom: 28px; }
-footer.site h2 { font: 700 0.74rem/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin: 0 0 14px; }
+footer.site h2 { font: 700 0.76rem/1 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 0 0 14px; }
 footer.site ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 footer.site a { color: var(--muted); text-decoration: none; }
 footer.site a:hover { color: var(--text); }
 footer.site .footer-base {
   border-top: 1px solid var(--border); padding-top: 18px; padding-bottom: 30px;
-  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 500 0.8rem/1.5 var(--mono); color: var(--faint);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 500 0.85rem/1.5 var(--font); color: var(--faint);
 }
 #page-weight { color: var(--muted); }
 
@@ -485,3 +496,16 @@ footer.site .footer-base {
 .legal h2 { font-size: 1.35rem; margin-top: 36px; }
 .legal ul { padding-left: 22px; }
 .legal li { margin-bottom: 6px; }
+
+/* --- About ---------------------------------------------------------------- */
+.mission {
+  margin: 0 0 40px; padding: 4px 0 4px 26px; border-left: 3px solid var(--studio);
+}
+.mission p { font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.5; font-weight: 600; color: var(--text); margin: 0; text-wrap: pretty; }
+.about-grid h2 { font-size: 1.45rem; margin-top: 36px; }
+.about-grid .checks { margin-top: 14px; }
+.facts-title { font-size: 1.05rem; margin: 0 0 6px; }
+.facts .fact a { color: var(--text); }
+
+/* Footer brand line */
+footer.site .tagline { margin-top: 14px; color: var(--muted); }
