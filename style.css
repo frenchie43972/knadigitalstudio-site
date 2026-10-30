@@ -19,6 +19,8 @@
   --wiu-amber: #ffb300;       /* Wrap It Up */
   --wiu-red: #e53935;
   --harbor: #14b8a6;          /* Harbor template */
+  --lantern: #f2a93b;         /* Lantern template */
+  --keepsake: #d4b36d;        /* Keepsake template */
 
   --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
@@ -357,17 +359,6 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .preview .stage[data-device="phone"] .harbor .h-strip { flex-direction: column; align-items: flex-start; }
 .preview .stage .harbor { padding-bottom: 18px; }
 
-/* Weight label: reads like a nutrition label */
-.weight {
-  border: 2px solid var(--text); border-radius: 12px; padding: 16px 18px; font-family: var(--mono); max-width: 380px;
-}
-.weight h3 { font: 800 1.15rem/1 var(--font); letter-spacing: -0.01em; margin: 0 0 4px; }
-.weight .sub { color: var(--muted); font-size: 0.78rem; border-bottom: 6px solid var(--text); padding-bottom: 8px; margin-bottom: 4px; }
-.weight dl { margin: 0; }
-.weight .row { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--border-strong); font-size: 0.88rem; }
-.weight .row:last-child { border-bottom: 0; }
-.weight dt { color: var(--muted); }
-.weight dd { margin: 0; font-weight: 700; }
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 .checks { list-style: none; padding: 0; display: grid; gap: 10px; }
@@ -411,7 +402,6 @@ footer.site .footer-base {
   border-top: 1px solid var(--border); padding-top: 18px; padding-bottom: 30px;
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 500 0.85rem/1.5 var(--font); color: var(--faint);
 }
-#page-weight { color: var(--muted); }
 
 /* --- Small screens ------------------------------------------------------ */
 @media (max-width: 900px) {
@@ -509,3 +499,27 @@ footer.site .footer-base {
 
 /* Footer brand line */
 footer.site .tagline { margin-top: 14px; color: var(--muted); }
+
+/* --- Template shop: cards, product pages ------------------------------------ */
+.card.lantern-card { --accent: var(--lantern); }
+.card.keepsake-card { --accent: var(--keepsake); }
+.card .thumb.shot { padding: 0; overflow: hidden; }
+.card .thumb.shot img { width: 100%; height: 100%; object-fit: cover; }
+.product.lantern { --accent: var(--lantern); --accent-ink: #2b1d05; }
+.product.keepsake { --accent: var(--keepsake); --accent-ink: #1d1606; }
+.prices { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 8px; }
+.prices li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 12px; }
+.prices b { font-size: 0.98rem; }
+.prices .amt { font-weight: 800; }
+.prices small { grid-column: 1 / -1; color: var(--muted); font-size: 0.84rem; }
+.prices .both { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.product-shot { margin: 0 0 8px; }
+.product-shot img, .shots img { border-radius: var(--radius-lg); border: 1px solid var(--border); }
+.shots { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); }
+.shots figure { margin: 0; }
+.shots figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+.versions { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); }
+.version { padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+.version h3 { font-size: 1.2rem; margin-bottom: 4px; }
+.version .muted { margin-bottom: 14px; }
+.version .checks { margin: 0; font-size: 0.96rem; }

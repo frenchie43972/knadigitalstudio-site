@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" data-style="clean">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrical · Harbor Home Services</title>
+  <meta name="description" content="Safe, tidy electrical work by licensed electricians. Outlets that don’t work, lights that flicker or a panel that’s full: we find the cause and fix it to code.">
+  <meta property="og:title" content="Electrical · Harbor Home Services">
+  <meta property="og:description" content="Safe, tidy electrical work by licensed electricians. Outlets that don’t work, lights that flicker or a panel that’s full: we find the cause and fix it to code.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f5ea8">
+  <!-- Light/dark mode: apply the visitor's saved choice before the page draws, so it never flashes. -->
+  <script>
+    (function () {
+      var root = document.documentElement, lock = root.getAttribute("data-mode-lock");
+      if (lock) { root.setAttribute("data-mode", lock); return; }
+      try { var saved = localStorage.getItem("harbor-mode"); if (saved === "light" || saved === "dark") root.setAttribute("data-mode", saved); } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/harbor.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <meta name="robots" content="noindex">
+  <script src="assets/js/harbor.js" defer></script>
+</head>
+<body>
+  <!-- Icons (Harbor's own line icons). Use one with: <svg class="icon"><use href="#phone"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="house" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path d="M5.5 3.5h3l1.8 4.6-2.4 1.5a11.5 11.5 0 0 0 6.5 6.5l1.5-2.4 4.6 1.8v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3.5 5.5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3.5 17.5a1.4 1.4 0 0 0 2 2l5.8-5.8a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-.5-.5-2z"/></symbol>
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 2.5 4.5 14h6.5l-1 7.5L18.5 10H12z"/></symbol>
+    <symbol id="hvac" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/><path d="m9.5 4.5 2.5 2 2.5-2M9.5 19.5l2.5-2 2.5 2"/></symbol>
+    <symbol id="drop" viewBox="0 0 24 24"><path d="M12 3.5s6 6.4 6 10.5a6 6 0 0 1-12 0c0-4.1 6-10.5 6-10.5z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.8 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.2-4.6"/></symbol>
+    <symbol id="badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.7 13.4 7.5 21l4.5-2.6 4.5 2.6-1.2-7.6"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="tag" viewBox="0 0 24 24"><path d="M3.5 12.5 11 5h7.5v7.5L11 20z"/><circle cx="15" cy="8.8" r="1.3"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.9 6.2.7-4.6 4.3 1.2 6.1L12 17l-5.6 3 1.2-6.1L3 9.6l6.2-.7z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Emergency banner: delete this block if you don't offer emergency service. -->
+  <div class="alert-bar">
+    <div class="container">
+      <span>24/7 emergency service. A real person answers, day or night.</span>
+      <a href="tel:+15035550142">Call (503) 555-0142</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="#house"/></svg></span>
+        Harbor Home Services
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <div class="nav-item has-sub">
+          <a href="services.html" aria-current="page">Services</a>
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services" aria-label="Show services">
+            <svg class="icon" aria-hidden="true"><use href="#chevron"/></svg>
+          </button>
+          <ul class="sub-menu" id="sub-services">
+            <li><a href="service-plumbing.html"><svg class="icon" aria-hidden="true"><use href="#wrench"/></svg>Plumbing</a></li>
+            <li><a href="service-electrical.html"><svg class="icon" aria-hidden="true"><use href="#bolt"/></svg>Electrical</a></li>
+            <li><a href="service-heating-cooling.html"><svg class="icon" aria-hidden="true"><use href="#hvac"/></svg>Heating &amp; cooling</a></li>
+            <li><a href="service-water-heaters.html"><svg class="icon" aria-hidden="true"><use href="#drop"/></svg>Water heaters</a></li>
+            <li><a href="service-maintenance.html"><svg class="icon" aria-hidden="true"><use href="#calendar"/></svg>Maintenance plans</a></li>
+            <li><a href="service-emergency.html"><svg class="icon" aria-hidden="true"><use href="#clock"/></svg>Emergency repairs</a></li>
+            <li class="sub-all"><a href="services.html">All services</a></li>
+          </ul>
+        </div>
+        <a href="service-areas.html">Service areas</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+15035550142"><small>Call us anytime</small><strong>(503) 555-0142</strong></a>
+        <button class="icon-btn mode-toggle" type="button" aria-label="Switch light or dark mode">
+          <svg class="icon moon" aria-hidden="true"><use href="#moon"/></svg>
+          <svg class="icon sun" aria-hidden="true"><use href="#sun"/></svg>
+        </button>
+        <a class="btn btn--primary" href="contact.html">Get a quote</a>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="#menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Electrical</li></ol></nav>
+        <span class="kicker">Electrical</span>
+        <h1>Safe, tidy electrical work by licensed electricians</h1>
+        <p class="lead">Outlets that don’t work, lights that flicker or a panel that’s full: we find the cause and fix it to code.</p>
+          <div class="btn-row"><a class="btn btn--primary" href="contact.html">Get a free quote</a><a class="btn btn--outline" href="tel:+15035550142"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>(503) 555-0142</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container with-aside">
+        <div class="prose">
+          <div class="photo" style="margin-bottom:32px"><img src="assets/img/electrical.jpg" alt="An electrician working on an electrical panel" width="1000" height="667" loading="lazy"></div>
+          <h2>What we do</h2>
+          <ul class="checklist checklist--cols">
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Outlets and switches</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Lighting and ceiling fans</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Panel upgrades</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>EV charger installation</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Whole-home surge protection</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Safety inspections</li>
+          </ul>
+          <h2>Price guide</h2>
+          <table class="price-list">
+            <thead><tr><th>Job</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr><td>Service call and diagnosis</td><td>$95</td></tr>
+              <tr><td>Outlet or switch replacement</td><td>from $119</td></tr>
+              <tr><td>Light fixture install</td><td>from $149</td></tr>
+              <tr><td>EV charger install</td><td>from $649</td></tr>
+            </tbody>
+          </table>
+          <p class="note">Every price is confirmed before work starts. No surprise fees.</p>
+          <h2>Common questions</h2>
+          <div class="faq" style="margin:0">
+          <details>
+            <summary>Are you licensed?<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary>
+            <div>Yes. Every electrician on our team holds a state license, and all work is done to code.</div>
+          </details>
+          <details>
+            <summary>Can you help with permits?<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary>
+            <div>We pull permits for jobs that need them and handle the inspection.</div>
+          </details>
+          </div>
+        </div>
+        <aside class="aside-stack" aria-label="Get in touch">
+          <div class="box box--brand">
+            <h2>Get a free quote</h2>
+            <p>Tell us what’s going on and we’ll reply within the hour with a price.</p>
+            <a class="btn btn--light" href="contact.html">Request a quote</a>
+          </div>
+          <div class="box">
+            <h3>Prefer to talk?</h3>
+            <p>A real person answers 24/7.</p>
+            <a class="btn btn--primary" href="tel:+15035550142"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>(503) 555-0142</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Get in touch">
+      <div class="cta">
+        <div>
+          <h2>Need it fixed today?</h2>
+          <p>Call for same-day service, or send a quick request and we’ll reply within the hour.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--light" href="tel:+15035550142"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>Call now</a>
+          <a class="btn btn--ghost" href="contact.html">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="#house"/></svg></span>
+          Harbor Home Services
+        </a>
+        <p style="margin-top:14px">Plumbing, electrical and heating &amp; cooling for Bayside homes since 2008.</p>
+        <ul class="footer-contact">
+          <li><svg class="icon" aria-hidden="true"><use href="#phone"/></svg><a href="tel:+15035550142">(503) 555-0142</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#mail"/></svg><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=120+Dock+Street+Bayside">120 Dock Street, Bayside</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="service-plumbing.html">Plumbing</a></li>
+          <li><a href="service-electrical.html">Electrical</a></li>
+          <li><a href="service-heating-cooling.html">Heating &amp; cooling</a></li>
+          <li><a href="service-water-heaters.html">Water heaters</a></li>
+          <li><a href="service-emergency.html">Emergency repairs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="service-areas.html">Service areas</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul>
+          <li>Mon–Fri: 7 a.m. – 7 p.m.</li>
+          <li>Saturday: 8 a.m. – 4 p.m.</li>
+          <li>Emergencies: 24/7</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <span>© 2026 Harbor Home Services · License #PL-20481</span>
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+
+  <!-- Call bar: stays at the bottom of the screen on phones -->
+  <div class="call-bar">
+    <a class="btn btn--primary" href="tel:+15035550142"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>Call now</a>
+    <a class="btn btn--outline" href="contact.html">Get a quote</a>
+  </div>
+  <script src="assets/js/demo.js" defer></script>
+</body>
+</html>

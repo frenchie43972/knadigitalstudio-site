@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Keepsake demo content. Import with Tools → Import → WordPress. Creates the demo pages; each page is built from Keepsake's patterns. -->
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+  <title>Keepsake demo</title>
+  <link>https://example.com</link>
+  <description>Keepsake theme demo content</description>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@example.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name></wp:author>
+  <item>
+    <title><![CDATA[Our story]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-our-story"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[How Elena & Sam met, and how a book club, a road trip and a dog named Biscuit led to a wedding.]]></excerpt:encoded>
+    <wp:post_id>100</wp:post_id>
+    <wp:post_name><![CDATA[our-story]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[The day]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-the-day"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Schedule, place, dress code and parking for the wedding on Saturday, June 12, 2027 at Mill Pond Farm.]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_name><![CDATA[the-day]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Travel & stay]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-travel"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Hotels with wedding rates, getting to Bayside and things to do nearby.]]></excerpt:encoded>
+    <wp:post_id>102</wp:post_id>
+    <wp:post_name><![CDATA[travel]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Wedding party]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-wedding-party"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Meet the people standing with Elena & Sam on June 12, 2027.]]></excerpt:encoded>
+    <wp:post_id>103</wp:post_id>
+    <wp:post_name><![CDATA[wedding-party]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[RSVP]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-rsvp"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[RSVP for the wedding on Saturday, June 12, 2027. Please reply by May 1, 2027.]]></excerpt:encoded>
+    <wp:post_id>104</wp:post_id>
+    <wp:post_name><![CDATA[rsvp]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Registry]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-registry"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Registry and honeymoon fund. Your being there is the best gift.]]></excerpt:encoded>
+    <wp:post_id>105</wp:post_id>
+    <wp:post_name><![CDATA[registry]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[FAQ]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-faq"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Answers about RSVPs, kids, plus-ones, dress code, parking, weather and gifts.]]></excerpt:encoded>
+    <wp:post_id>106</wp:post_id>
+    <wp:post_name><![CDATA[faq]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Photos]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-photos"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Photos from the engagement and the wedding day.]]></excerpt:encoded>
+    <wp:post_id>107</wp:post_id>
+    <wp:post_name><![CDATA[photos]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Thank you]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"keepsake/page-thank-you"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Thanks for your RSVP.]]></excerpt:encoded>
+    <wp:post_id>108</wp:post_id>
+    <wp:post_name><![CDATA[thank-you]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+</channel>
+</rss>

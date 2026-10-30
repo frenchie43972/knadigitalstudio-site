@@ -1,0 +1,40 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Harbor Home Services",
+        "blogdescription": "Plumbing, electrical and heating & cooling",
+        "permalink_structure": "/%postname%/"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://knadigitalstudio.com/templates/harbor/wordpress/harbor-demo.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://knadigitalstudio.com/templates/harbor/wordpress/demo-content.xml"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; flush_rewrite_rules(); ?>"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Elena & Sam",
+        "blogdescription": "June 12, 2027 \u00b7 Mill Pond Farm",
+        "permalink_structure": "/%postname%/"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://knadigitalstudio.com/templates/keepsake/wordpress/keepsake-demo.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://knadigitalstudio.com/templates/keepsake/wordpress/demo-content.xml"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; flush_rewrite_rules(); ?>"
+    }
+  ]
+}

@@ -2,15 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://knadigitalstudio.com/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/work/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://knadigitalstudio.com/templates/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://knadigitalstudio.com/templates/harbor/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://knadigitalstudio.com/templates/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://knadigitalstudio.com/templates/harbor/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://knadigitalstudio.com/templates/lantern/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://knadigitalstudio.com/templates/keepsake/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://knadigitalstudio.com/about/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/contact/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/wrap-it-up/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/wrap-it-up/beta/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/wrap-it-up/privacy/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/privacy/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://knadigitalstudio.com/license/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://knadigitalstudio.com/license/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://knadigitalstudio.com/refunds/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://knadigitalstudio.com/terms/</loc><lastmod>2026-10-26</lastmod></url>
 </urlset>

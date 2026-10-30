@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Harbor demo content. Import with Tools → Import → WordPress. Creates the demo pages; each page is built from Harbor's patterns. -->
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+  <title>Harbor demo</title>
+  <link>https://example.com</link>
+  <description>Harbor theme demo content</description>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@example.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name></wp:author>
+  <item>
+    <title><![CDATA[Services]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-services"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Plumbing, electrical, heating & cooling, water heaters, maintenance plans and 24/7 emergency repairs in Bayside.]]></excerpt:encoded>
+    <wp:post_id>100</wp:post_id>
+    <wp:post_name><![CDATA[services]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Service areas]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-service-areas"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Same-day plumbing, electrical and heating & cooling in Bayside and 12 nearby towns.]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_name><![CDATA[service-areas]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Reviews]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-reviews"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Rated 4.9 out of 5 from 212 Google reviews. Read what Bayside homeowners say.]]></excerpt:encoded>
+    <wp:post_id>102</wp:post_id>
+    <wp:post_name><![CDATA[reviews]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[About]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-about"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[A family-owned Bayside company since 2008, with licensed plumbers, electricians and HVAC technicians.]]></excerpt:encoded>
+    <wp:post_id>103</wp:post_id>
+    <wp:post_name><![CDATA[about]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Contact]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-contact"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Request a free quote or call (503) 555-0142. A real person answers 24/7 for emergencies.]]></excerpt:encoded>
+    <wp:post_id>104</wp:post_id>
+    <wp:post_name><![CDATA[contact]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Privacy]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-privacy"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[How Harbor Home Services handles your information.]]></excerpt:encoded>
+    <wp:post_id>105</wp:post_id>
+    <wp:post_name><![CDATA[privacy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Plumbing]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-plumbing"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Leaks, clogs and fixtures, fixed right the first time. From a dripping tap to a full repipe, our licensed plumbers arrive with the parts to finish most jobs in one visit.]]></excerpt:encoded>
+    <wp:post_id>106</wp:post_id>
+    <wp:post_name><![CDATA[plumbing]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Electrical]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-electrical"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Safe, tidy electrical work by licensed electricians. Outlets that don’t work, lights that flicker or a panel that’s full: we find the cause and fix it to code.]]></excerpt:encoded>
+    <wp:post_id>107</wp:post_id>
+    <wp:post_name><![CDATA[electrical]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Heating & cooling]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-heating-cooling"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Stay comfortable all year, whatever the weather. Furnace repair, AC tune-ups and energy-efficient replacements, with honest advice about repair versus replace.]]></excerpt:encoded>
+    <wp:post_id>108</wp:post_id>
+    <wp:post_name><![CDATA[heating-cooling]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Water heaters]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-water-heaters"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Hot water back today, not next week. Repairs and same-day replacement for tank and tankless water heaters, with old-unit removal included.]]></excerpt:encoded>
+    <wp:post_id>109</wp:post_id>
+    <wp:post_name><![CDATA[water-heaters]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Maintenance plans]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-maintenance"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Catch small problems before they become big bills. One yearly plan covers plumbing, electrical and HVAC checkups, with priority booking and member discounts.]]></excerpt:encoded>
+    <wp:post_id>110</wp:post_id>
+    <wp:post_name><![CDATA[maintenance]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Emergency repairs]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/service-emergency"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Burst pipe at 2 a.m.? We pick up and we come out. A real person answers day or night, every day of the year. We’ll tell you how to limit the damage while we’re on the way.]]></excerpt:encoded>
+    <wp:post_id>111</wp:post_id>
+    <wp:post_name><![CDATA[emergency]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>100</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+  <item>
+    <title><![CDATA[Bayside]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<!-- wp:pattern {"slug":"harbor/page-town"} /-->]]></content:encoded>
+    <excerpt:encoded><![CDATA[Same-day plumbing, electrical and heating & cooling in Bayside from a local, licensed team.]]></excerpt:encoded>
+    <wp:post_id>112</wp:post_id>
+    <wp:post_name><![CDATA[bayside]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>101</wp:post_parent>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-full]]></wp:meta_value></wp:postmeta>
+  </item>
+</channel>
+</rss>
