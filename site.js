@@ -50,7 +50,7 @@ document.querySelectorAll("form.ml-form").forEach((form) => {
     fetch(form.action, { method: "POST", body: new FormData(form), mode: "no-cors" })
       .then(() => {
         form.querySelectorAll("input, button").forEach((el) => { el.hidden = true; });
-        note.textContent = "Almost done: check your inbox and tap the confirm link.";
+        note.textContent = "Almost done: tap the confirm link in the email we just sent. Not in your inbox? Check Promotions or Spam.";
       })
       .catch(() => {
         button.disabled = false;
