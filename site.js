@@ -38,3 +38,23 @@ if (preview) {
     names.forEach((el) => { el.textContent = name; });
   });
 }
+
+// Email signup (MailerLite): post in the background and confirm on the page.
+// Without JavaScript the form still posts to MailerLite directly.
+document.querySelectorAll("form.ml-form").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const note = form.querySelector("[role=status]");
+    const button = form.querySelector("button");
+    button.disabled = true;
+    fetch(form.action, { method: "POST", body: new FormData(form), mode: "no-cors" })
+      .then(() => {
+        form.querySelectorAll("input, button").forEach((el) => { el.hidden = true; });
+        note.textContent = "Almost done: check your inbox and tap the confirm link.";
+      })
+      .catch(() => {
+        button.disabled = false;
+        note.textContent = "That didn’t go through. Please try again, or email knadigitalstudio@gmail.com.";
+      });
+  });
+});

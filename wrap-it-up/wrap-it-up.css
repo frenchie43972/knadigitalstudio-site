@@ -6,6 +6,10 @@
   --accent-ink: #1b1b1f;
 }
 
+/* Launch note on the beta page */
+.wiu .launch-note { background: color-mix(in srgb, var(--wiu-amber) 14%, var(--bg)); border-bottom: 1px solid rgba(255, 179, 0, 0.35); }
+.wiu .launch-note p { margin: 0; padding: 14px 0; }
+
 /* Hero */
 .wiu .hero { padding: 56px 0 48px; }
 .wiu .hero::before {
