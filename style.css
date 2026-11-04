@@ -589,3 +589,30 @@ footer.site .tagline { margin-top: 14px; color: var(--muted); }
 .th-follow { background: linear-gradient(135deg, rgba(168, 203, 224, 0.14), rgba(31, 58, 90, 0.35)), var(--surface); }
 .thumb.tidy img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 900px) { .th-hero .wrap { grid-template-columns: 1fr; gap: 32px; } }
+
+/* --- Social links (footer + links page) ------------------------------- */
+.social { display: inline-flex; gap: 14px; align-items: center; }
+.social a { display: inline-flex; width: 36px; height: 36px; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border-strong); color: var(--muted); }
+.social a:hover { color: var(--text); border-color: var(--accent); }
+.social svg { width: 18px; height: 18px; }
+
+/* --- Notify-me form on template pages ---------------------------------- */
+.notify-form { display: grid; gap: 8px; }
+.notify-form input { min-width: 0; font: 500 1rem/1.2 var(--font); color: var(--text); background: var(--bg); border: 1px solid var(--border-strong); border-radius: 10px; padding: 12px 14px; }
+.notify-form small { color: var(--faint); font-size: 0.8rem; }
+.signup .notify-form { display: flex; flex-wrap: wrap; gap: 10px; }
+.signup .notify-form input { flex: 1 1 220px; }
+.signup .notify-form small { width: 100%; }
+
+/* --- Links page (link in bio) ------------------------------------------ */
+.links-page { max-width: 560px; margin: 0 auto; padding-top: 48px; padding-bottom: 24px; text-align: center; }
+.links-page .badge { display: block; width: 96px; height: 96px; margin: 0 auto; border-radius: 50%; }
+.links-page h1 { font-size: 1.9rem; margin: 14px 0 6px; }
+.links-page .lead { color: var(--muted); margin: 0 0 26px; }
+.link-list { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 12px; text-align: left; }
+.link-list a { display: block; padding: 16px 18px; border-radius: var(--radius); border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); text-decoration: none; }
+.link-list a:hover { border-color: var(--accent); }
+.link-list a.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.link-list b { display: block; font-size: 1.02rem; }
+.link-list span { display: block; font-size: 0.88rem; opacity: 0.8; margin-top: 2px; }
+.links-page .signup { grid-template-columns: 1fr; text-align: left; padding: 22px; gap: 12px; margin-bottom: 26px; }
