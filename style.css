@@ -616,3 +616,16 @@ footer.site .tagline { margin-top: 14px; color: var(--muted); }
 .link-list b { display: block; font-size: 1.02rem; }
 .link-list span { display: block; font-size: 0.88rem; opacity: 0.8; margin-top: 2px; }
 .links-page .signup { grid-template-columns: 1fr; text-align: left; padding: 22px; gap: 12px; margin-bottom: 26px; }
+
+/* --- Google Play badge (official artwork, unmodified; image includes Google's clear space) --- */
+.play-badge { display: inline-flex; line-height: 0; margin: -10px 0 -10px -14px; border-radius: 10px; }
+.play-badge img { height: 68px; width: auto; }
+.play-badge.small { position: relative; z-index: 1; margin: -8px -10px -8px auto; }
+.play-badge.small img { height: 48px; }
+.legal-note { color: var(--muted); font-size: 0.8rem; margin-top: 4px; padding-bottom: 18px; }
+/* Card with its own links inside: the title link covers the card */
+.card.linked h3 a { color: inherit; text-decoration: none; }
+.card.linked h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.card.linked:hover { border-color: var(--accent); transform: translateY(-2px); }
+.card.linked h3 a:focus-visible { outline: none; }
+.card.linked:has(h3 a:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
