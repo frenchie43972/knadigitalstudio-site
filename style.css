@@ -131,6 +131,8 @@ section.alt { background: var(--bg-2); border-block: 1px solid var(--border); }
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--accent); color: var(--accent-ink); }
 .btn-primary:hover { filter: brightness(1.08); }
+.btn-soon, .btn-soon:hover { cursor: default; filter: none; opacity: 0.8; }
+.btn-soon:active { transform: none; }
 .btn-ghost { background: transparent; color: var(--text); border-color: var(--border-strong); }
 .btn-ghost:hover { border-color: var(--accent); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
