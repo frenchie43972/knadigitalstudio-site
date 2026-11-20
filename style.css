@@ -623,6 +623,8 @@ footer.site .tagline { margin-top: 14px; color: var(--muted); }
 .play-badge { display: inline-flex; line-height: 0; margin: -10px 0 -10px -14px; border-radius: 10px; }
 .play-badge img { height: 68px; width: auto; }
 .play-badge.small { position: relative; z-index: 1; margin: -8px -10px -8px auto; }
+.card.linked .meta a.chip { position: relative; z-index: 1; text-decoration: none; color: var(--wiu-amber); border-color: rgba(255, 179, 0, 0.35); }
+.card.linked .meta a.chip:hover { border-color: var(--wiu-amber); }
 .play-badge.small img { height: 48px; }
 .legal-note { color: var(--muted); font-size: 0.8rem; margin-top: 4px; padding-bottom: 18px; }
 /* Card with its own links inside: the title link covers the card */
