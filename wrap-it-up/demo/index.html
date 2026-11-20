@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try Wrap It Up in your browser · K&amp;A Digital Studio</title>
+  <meta name="description" content="Type any message and flash it full screen with a slow, gentle pulse, Wrap It Up style. Free, in your browser, nothing to install.">
+  <meta property="og:title" content="Try Wrap It Up: type your own sign">
+  <meta property="og:description" content="Type any message and flash it full screen. Free, in your browser.">
+  <meta property="og:image" content="https://knadigitalstudio.com/assets/share/wrap-it-up.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Wrap It Up: press the button and the screen tells them to wrap it up.">
+  <meta name="twitter:image" content="https://knadigitalstudio.com/assets/share/wrap-it-up.png">
+  <link rel="canonical" href="https://knadigitalstudio.com/wrap-it-up/demo/">
+  <meta property="og:url" content="https://knadigitalstudio.com/wrap-it-up/demo/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+  <link rel="icon" href="/favicon-32.png?v=2" type="image/png" sizes="32x32">
+  <link rel="icon" href="/icon-192.png?v=2" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/wrap-it-up/wrap-it-up.css">
+  <script src="/site.js" defer></script>
+  <style>
+    /* Demo page only. Colours and timing match the app's free Classic skin
+       (lib/skins/default_skin.dart, lib/flash/flash_timing.dart). */
+    .wiu .demo { display: grid; gap: 28px; grid-template-columns: 1.1fr 0.9fr; align-items: start; }
+    .wiu .demo-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+    .wiu .demo-form label { display: block; font-weight: 700; margin-bottom: 10px; }
+    .wiu .demo-form input {
+      width: 100%; box-sizing: border-box; font: 400 1.6rem/1.2 "Bangers", var(--font); letter-spacing: 0.04em;
+      color: var(--text); background: var(--bg); border: 2px solid var(--border-strong); border-radius: 12px; padding: 12px 14px;
+    }
+    .wiu .demo-form input:focus { outline: none; border-color: var(--accent); }
+    .wiu .demo-form .count { color: var(--faint); font-size: 0.85rem; margin-top: 6px; text-align: right; }
+    .wiu .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .wiu .chips button {
+      font: 400 1rem/1 "Bangers", var(--font); letter-spacing: 0.05em; color: var(--accent);
+      background: rgba(255, 179, 0, 0.1); border: 1px solid rgba(255, 179, 0, 0.35); border-radius: 999px; padding: 8px 12px; cursor: pointer;
+    }
+    .wiu .chips button:hover { background: rgba(255, 179, 0, 0.2); }
+    .wiu .go { margin-top: 20px; width: 100%; font-size: 1.15rem; padding: 16px 22px; }
+    .wiu .demo-side .phone { width: 210px; margin: 0 auto; }
+    .wiu .after { margin-top: 28px; }
+    .wiu .after[hidden] { display: none; }
+
+    /* The flash */
+    .flash {
+      position: fixed; inset: 0; z-index: 1000; display: none; place-items: center;
+      background: #ffb300; opacity: 0; overflow: hidden;
+    }
+    .flash.on { display: grid; }
+    .flash .phrase {
+      font-family: "Bangers", system-ui, sans-serif; font-weight: 400; letter-spacing: 0.03em; line-height: 1.02;
+      text-transform: uppercase; text-align: center; color: #fff8e1;
+      -webkit-text-stroke: 0.16em #1b1b1f; paint-order: stroke fill;
+      white-space: pre-wrap; overflow-wrap: normal; padding: 0 0.15em;
+      max-width: calc(100vw - 48px); will-change: transform;
+    }
+    .flash .stop {
+      position: absolute; top: max(12px, env(safe-area-inset-top)); left: 12px;
+      width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
+      background: rgba(255, 248, 225, 0.22); color: rgba(27, 27, 31, 0.6); display: grid; place-items: center;
+    }
+    .flash .stop svg { width: 28px; height: 28px; }
+    @media (max-width: 860px) { .wiu .demo { grid-template-columns: 1fr; } .wiu .demo-side { display: none; } }
+  </style>
+</head>
+<body class="wiu">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img class="mark" src="/icon-192.png" alt="" width="30" height="30">K&amp;A Digital Studio</a>
+      <nav class="main" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/work/" aria-current="page">Work</a>
+        <a href="/templates/">Templates</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="subnav">
+    <div class="wrap">
+      <span class="crumb"><a href="/work/">Work</a> / <a href="/wrap-it-up/">Wrap It Up</a> / <b>Try it</b></span>
+      <nav aria-label="Wrap It Up">
+        <a href="/wrap-it-up/">Overview</a>
+        <a href="/wrap-it-up/demo/" aria-current="page">Try it</a>
+        <a href="/wrap-it-up/privacy/">Privacy policy</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap demo">
+        <div>
+          <span class="badge">Free · In your browser · Nothing to install</span>
+          <h1><span class="display">TYPE IT. FLASH IT.</span></h1>
+          <p class="lead">Type the message they need to see, press the button, and hold up your screen. It fills the whole screen with a slow, gentle pulse.</p>
+
+          <form class="demo-form" id="demo-form" autocomplete="off">
+            <label for="msg">Your message</label>
+            <input id="msg" name="msg" type="text" maxlength="40" placeholder="WRAP IT UP!" enterkeyhint="go" spellcheck="false">
+            <div class="count"><span id="count">0</span>/40</div>
+            <div class="chips" aria-label="Try one of these">
+              <button type="button" data-text="Wrap it up!">Wrap it up!</button>
+              <button type="button" data-text="Get to the point!">Get to the point!</button>
+              <button type="button" data-text="And… scene.">And… scene.</button>
+            </div>
+            <button class="btn btn-primary go" type="submit">Flash it</button>
+            <p class="meta" style="margin:14px 0 0">Stop it anytime with the home button or Esc. It stops by itself after 30 seconds. What you type stays in this page; nothing is sent anywhere.</p>
+          </form>
+
+          <div class="after" id="after" hidden>
+            <div class="cta-band">
+              <h2>Want it in one tap?</h2>
+              <p class="lead">The Wrap It Up app for Android does this with one big button: 41 ready-made phrases and six skins. Free to download, no ads.</p>
+              <div class="btn-row"><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.knadigitalstudio.wrapitup&amp;referrer=utm_source%3Dsite%26utm_medium%3Dwiu-demo%26utm_campaign%3Dwiu-demo" target="_blank" rel="noopener"><img src="/assets/badges/google-play.png" alt="Get it on Google Play" width="646" height="250"></a></div>
+              <p class="meta" style="margin-top:12px">Typing your own message is only in this web demo for now; the app uses its ready-made phrases. Not available in the EU, EEA or UK yet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="demo-side" aria-hidden="true">
+          <div class="phone"><img src="/assets/screens/classic_flash.webp" alt="" width="585" height="1266"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="meta">Novelty use only. Point it at people responsibly. The app: <a href="/wrap-it-up/">Wrap It Up overview</a> · <a href="https://play.google.com/store/apps/details?id=com.knadigitalstudio.wrapitup&amp;referrer=utm_source%3Dsite%26utm_medium%3Dwiu-demo-footer%26utm_campaign%3Dwiu-demo" target="_blank" rel="noopener">Google Play</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="flash" id="flash" role="dialog" aria-modal="true" aria-label="Your message, full screen">
+    <button class="stop" id="stop" type="button" aria-label="Stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></button>
+    <div class="phrase" id="phrase" aria-live="assertive"></div>
+  </div>
+
+  <footer class="site">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="/"><img class="mark" src="/icon-192.png" alt="" width="30" height="30">K&amp;A Digital Studio</a>
+        <p class="tagline">Useful shouldn’t be hard to find.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/work/">Work</a></li><li><a href="/templates/">Templates</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul><li><a href="/tidyharbor/">TidyHarbor</a></li><li><a href="/wrap-it-up/">Wrap It Up</a></li><li><a href="/templates/harbor/">Harbor</a></li><li><a href="/templates/lantern/">Lantern</a></li><li><a href="/templates/keepsake/">Keepsake</a></li></ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul><li><a href="/privacy/">Privacy</a></li><li><a href="/license/">License</a></li><li><a href="/refunds/">Refunds</a></li><li><a href="/terms/">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>&copy; 2026 K&amp;A Digital Studio · knadigitalstudio@gmail.com</span>
+    </div>
+    <p class="wrap legal-note">Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+
+  <script>
+  (() => {
+    // Same safety timing as the app (lib/flash/flash_timing.dart): one full
+    // colour cycle every 1600 ms (0.625 Hz), smooth cosine blend, never a hard cut.
+    const PULSE_MS = 1600, FADE_IN_MS = 300, FADE_OUT_MS = 400, MAX_MS = 30000;
+    const A = [0xff, 0xb3, 0x00], B = [0xe5, 0x39, 0x35]; // Classic flash colours
+
+    const form = document.getElementById("demo-form");
+    const input = document.getElementById("msg");
+    const count = document.getElementById("count");
+    const flash = document.getElementById("flash");
+    const phrase = document.getElementById("phrase");
+    const stopBtn = document.getElementById("stop");
+    const after = document.getElementById("after");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    let start = 0, raf = 0, stopping = 0, opener = null;
+
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+    const easeIn = (t) => t * t * t;
+    const easeOutBack = (t) => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); };
+    const lerp = (a, b, m) => a.map((v, i) => Math.round(v + (b[i] - v) * m));
+
+    input.addEventListener("input", () => { count.textContent = input.value.length; });
+    document.querySelectorAll(".chips button").forEach((b) => b.addEventListener("click", () => {
+      input.value = b.dataset.text; count.textContent = input.value.length; input.focus();
+    }));
+
+    function fit() {
+      // Largest font size that fits the screen with margins.
+      const maxW = window.innerWidth - 48, maxH = window.innerHeight - 120;
+      phrase.style.overflowWrap = "normal";
+      let size = Math.min(window.innerWidth * 0.45, window.innerHeight * 0.5);
+      phrase.style.fontSize = size + "px";
+      while (size > 16 && (phrase.scrollWidth > maxW || phrase.scrollHeight > maxH)) {
+        size *= 0.94; phrase.style.fontSize = size + "px";
+      }
+      // A single very long word: let it break rather than run off screen.
+      if (phrase.scrollWidth > maxW) phrase.style.overflowWrap = "anywhere";
+    }
+
+    function frame(now) {
+      const t = now - start;
+      let opacity = 1;
+      if (stopping) {
+        const s = (now - stopping) / FADE_OUT_MS;
+        if (s >= 1) return close();
+        opacity = 1 - easeIn(s);
+      } else if (t < FADE_IN_MS) {
+        opacity = easeOut(t / FADE_IN_MS);
+      } else if (t >= MAX_MS - FADE_OUT_MS) {
+        stopping = now; // natural end: same fade as a manual stop
+      }
+      const still = reduce.matches;
+      const mix = still ? 0 : 0.5 - 0.5 * Math.cos(2 * Math.PI * Math.max(0, t - FADE_IN_MS) / PULSE_MS);
+      const pop = still ? 1 : easeOutBack(Math.min(1, t / (FADE_IN_MS * 1.5)));
+      const [r, g, b] = lerp(A, B, mix);
+      flash.style.background = `rgb(${r},${g},${b})`;
+      flash.style.opacity = opacity;
+      phrase.style.transform = `scale(${(0.7 + 0.3 * pop) * (1 + 0.03 * mix)})`;
+      raf = requestAnimationFrame(frame);
+    }
+
+    function open(text) {
+      opener = document.activeElement;
+      phrase.textContent = text;
+      flash.classList.add("on");
+      if (flash.requestFullscreen) flash.requestFullscreen({ navigationUI: "hide" }).catch(() => {});
+      fit();
+      stopping = 0; start = performance.now();
+      stopBtn.focus({ preventScroll: true });
+      raf = requestAnimationFrame(frame);
+    }
+
+    function stop() { if (flash.classList.contains("on") && !stopping) stopping = performance.now(); }
+
+    function close() {
+      cancelAnimationFrame(raf);
+      flash.classList.remove("on");
+      flash.style.opacity = 0;
+      if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+      after.hidden = false;
+      if (opener && opener.focus) opener.focus({ preventScroll: true });
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const text = input.value.trim() || input.placeholder;
+      open(text);
+    });
+    stopBtn.addEventListener("click", stop);
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") stop(); });
+    document.addEventListener("fullscreenchange", () => { if (!document.fullscreenElement) stop(); });
+    window.addEventListener("resize", () => { if (flash.classList.contains("on")) fit(); });
+  })();
+  </script>
+  <!-- Cloudflare Web Analytics: cookieless, no personal data (see /privacy/) --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "163248bc008e47219f5db76ea5b6055a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
